@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "optifine",
+  "version": "1.0",
+
+  "name": "Optifine G5",
+  "description": "Game Optimizer",
+  "authors": [
+    "Maxsimus",
+    "Koloslolya",
+    "Shalopay"
+  ],
+
+  "license": "WTFPL",
+  "icon": "assets/zamorozka/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.optifine.Main"
+    ]
+  },
+  "mixins": [
+    "zamorozka.mixins.json",
+    "mixins.viafabric116.address.json",
+    "mixins.viafabric116.pipeline.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": ">=0.36.0+1.16",
+    "minecraft": ">=1.16.5"
+  }
+}
